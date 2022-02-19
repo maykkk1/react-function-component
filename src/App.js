@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FormularioCadastro from "./components/FormularioCadastro/FormularioCadastro";
+import { Component } from "react";
+import { Container, Typography } from "@material-ui/core";
+import '@fontsource/roboto/500.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Container componet="article" maxWidth="sm">
+        <Typography variant="h3" componet="h1" align="center">Formulário de Cadastro</Typography>
+        <FormularioCadastro />
+      </Container>
+    );
+  }
 }
-
 export default App;
